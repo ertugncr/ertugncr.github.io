@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>WEB TASARIM-2 VİZE</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+        
+        </head>
+<body>
+    <section id="home" class="main-home">
+        <div class="kaplama"></div>
+        <div id="particles-js"></div>
+        <div class="container">
+             <div class="row">
+   
+                  <div class="col-md-12 col-sm-12">
+                       <h1>REACT'A GİRİŞ</h1>
+                       <h4>React nedir,kurulumu,listeler ve kısaca bakış</h4>
+                  </div>
+   
+             </div>
+        </div>
+
+   </section>
+
+
+   <div class="içerik">
+          <div class="içerik-kutusu">
+               <h3 class="başlık">ORTAYA ÇIKIŞI</h3>
+               <p>Reactın ortaya çıkışı 2011 yılına dayanıyor. 2011 yılında Facebookda O zamanlar XHP adında bir Javascript portu yayınladı ve de PHP’nin (programlama dili) içine yerleştirdi. XHP;
+               bileşen oluşturmayı sağlayan ve de kullanıcı taraflı gelen bilgileri temizleme yükünü PHP’den alan bir yapıya sahipti. 
+               Bu sırada Facebook yükselişe geçtiği bir döneme girmişti. Bu nedenle daha kontrol sahibi olabilecekleri bir programlamaya ihtiyaçları vardı. Jordan Walke, facebook çalışanı, 
+               XHP’den esinlenerek bir fikirle geldi. Bu fikrin gelişimi altı ay sonunda sonuca ulaştığında FaxJS adlı React’ın ilk versiyonu ortaya çıkmış oldu.
+
+               2013 yılında ise kararlı olarak açık kaynak kodlu olarak piyasa sürülmüştür.
+               <br>
+               <br>
+               Başlarda popülerlik kazanması yanlış stratejiler sonucu sekteye uğrasa da, atılan doğru adımlar ile günümüzde en çok tercih edilen kütüphanelerden biri haline geldi.
+               zamanda yıllar içerisinde gelişimini tamamlayarak, React stabil bir yapıya da ulaşmış oldu.
+                <br>Aşağıda Jorden Walke'nın fotoğrafını görebilirsiniz.
+               </p>
+               <img src="images/jordan walke.png" class="facebooklogo1">
+
+               <img src="images/react facebook.png " class="facebooklogo">
+
+          </div>
+   </div>
+   
+
+<div class="içerik">
+     <div id="section-1"></div>
+     <div class="içerik-kutusu">
+           <h3 class="başlık">REACT NEDİR?</h3>
+          <p>
+               React açık kaynak olan, kullanıcı arayüzleri yaratmak için kullanılan bir Javascript kütüphanesidir.
+                Arayüz yaratmak adına yeniden kullanılabilen bileşenler, component adı verilen yapılar kullanılmaktadır.
+                <br>
+                SPA (Single Page Application) oluşturmak için kullanılır.
+
+                Rakipleri olan Angular, Vue JS ‘in aksine React bir kütüphanedir. Angular ve Vue JS ise birer framework’tür. Kısaca aralarındaki farkı anlatmak gerekirse; 
+                <br>React’ın odaklandığı nokta arayüz, görsel, görünen kısımdır. Bunların yanında veri tabanı, form doğrulaması gibi web sayfasının görünmeyen kısmıyla ilgilenmemektedir. 
+                Framework’ler ise bir web sayfasının tüm ihtiyacını karşılayacak parçaları içinde bulundururlar.
+               <br>
+               <br>
+               <b>
+                    Peki React, rakipleri framework olmasına rağmen nasıl bu kadar popüler?
+                    Bunu anlamak için biraz daha Reactı tanıyalım.
+               </b> 
+          </p>
+     </div>
+
+   </div>
+
+</div>
+
+<div class="içerik">
+     <div class="içerik-kutusu">
+          <h3 class="başlık">JSX</h3>
+          <p>React uygulamalarını iki şekilde, Javascript ya da JSX (Javascript Extension) olarak yazabilirsiniz.
+               <br>
+               Genellikle JSX tercih edilmektedir. Bunun nedeni Javascript’de kullanıcı arayüzlerini yazmanın zorlayıcı olmasıdır.
+               <br>
+               JSX yapısı, HTML’e benzeyen bir kod yapısına sahiptir ve veriyi kontrol etmenize yardımcı olur. JSX’in amacı React üzerinde bileşenler yaratırken kolaylık sağlamasıdır.
+               <br>
+               <br>
+               Aşağıda sırasıyla JSX ve Javascript ile yazılmış örnekler görmektesiniz. JSX ile 
+               React içinde kod yazmanın pratikliği ve rahatlığı bu iki örnek ile bile anlaşılıyor.</p>
+               <code>
+                    const myelement = h1 JSX'i seviyorum! h1;
+                    <br>
+                 ReactDOM.render(myelement, document.getElementById('root'));
+                    
+               </code>
+               <br>
+               <br>
+               <code>
+                    const myelement = React.createElement('h1', {}, 'JSX Kullanmıyorum!');
+                    <br>
+                    ReactDOM.render(myelement, document.getElementById('root'));
+               </code>
+     </div>
+ </div>
+ <div class="içerik">
+     <div class="içerik-kutusu">
+          <h3 class="başlık">Virtual DOM</h3>
+          <i> Dom (Document Object Model) ya da Belge Nesne Modelidir.</i>
+          <br>
+          <br>
+          <p>Bir web sayfasının iskeleti dediğimiz yapı HTML ile yazılır.
+          HTML ile yazılmış bir sayfada gördüğünüz her yapı birer belge nesne modelidir. Eğer bunlarda bir değişiklik veya güncellenme yapmak isterseniz 
+          HTML ile gerçekleştirebilirsiniz.</p>
+          <br>
+          <br>
+
+          <p>HTML ile gerçekleştirebilirsiniz dedik fakat bunun 
+          için tek yol bu değil elbette. HTML ile sayfa yapısını değiştirmek statik 
+          sayfalarda bir sıkıntı yaratmaz iken, dinamik sayfalarda sorunlara yol açabiliyor. 
+          Statik dediğimiz sayfa kullanıcı ile etkileşime geçmeyen, Javascript’den önceki sayfalar diyebiliriz. Javascript’in gelmesiyle interaktif dediğimiz dinamik sayfalar hayatımızda yer edinmeye başladı. Gün geçtikçe, kullanımı arttıkça kullanıcı trafiği de onunla birlikte attı.</p>
+          <br>
+          <br>
+          <p>
+               JSX kullanan bir geliştirici için bu güncellenme işlemi React ve
+               JSX ile gerçekleştirilebiliyor. Bu tarz güncellemeleri Virtual DOM adında bir hayali DOM elementi yaratarak başarmaktadır. Bir DOM elementinde ne zaman bir değişiklik olsa, 
+               React bu hayali DOM elementini güncellemektedir.
+          </p>
+          <br>
+          <br>
+          <p>
+               Diyelim ki; bir alışveriş sitesinde alışveriş yapmaktasınız. 
+               Sepetinize ürünler ekliyorsunuz. Bazen silip bazen yenilerini ekliyorsunuz. Eğer her seferinde yaptığı her bir işlem için tüm sistem yenilense hem zaman kaybı olacak hem de sistem yavaşlayacak. Bunun yerine sanal bir DOM üzerine yansıyan değişiklikleri görmektesiniz ve sonunda gerçek olan DOM güncellemektedir. 
+               Bu sayede performansta kazanç sağlanıyor.
+          </p>
+     </div>
+ </div>
+ <div class="içerik">
+     <div class="içerik-kutusu">
+          <h3 class="başlık">Neden REACT Kullanmalıyız</h3>
+          <p>
+               Yukarıda Reactın özellikleri gibi nedenlerın yanı sıra kısaca;
+               <br>
+               <br>
+               Öğrenmesi <b>kolay</b>,
+               <br>
+               <br>
+               Öğrendiğiniz takdirde birçok <b>iş imkanı</b> yurt içi ve yurt dışında bulunmakta,
+               <br>
+               <br>
+               <b>Yeniden kullanılabilir</b> yapısıyla bir uygulama için yarattığınız diğer uygulamalarda da kullanabilirsiniz,
+               <br>
+               <br>
+               Virtual DOM sayesinde <b>performans açısından</b> hızlı bir sonuç vermekte,
+               ve büyük, destekleyici bir <b>topluluğa</b> sahip!
+          </p>
+     </div>
+ </div>
+ <div class="içerik">
+     <div class="içerik-kutusu">
+          <h3 class="başlık">REACT KURULUMU</h3>
+          React'ı ilk defa kuracalar için biraz karışık ve zorlayıcı gelebilir. Adım adım uzunca fotoğraflara
+          anlatmaya çalışıcağım.
+          <br>
+          <br>
+          İlK olarak bilgisayarımızda Node.js kurulu olması gerkiyor.Yüklü olup olmadığını bilmiyorsanız cmd yi açıp node -v yazıp öğrenebilirsiniz
+          <br>
+          <br>
+          <img src="images/Screenshot_4-2.png">
+          Eğer node.js yüklü değilse şu linkten <a href="https://nodejs.org/tr/download/">nodejs.org/tr/download</a>
+           indirebilirsiniz.
+           <br>
+           <br>
+           <p>indirme sayfası bu şekilde karşımıza cıkacaktır buradan LTS kısmından bilgisayarınıza uygun olan sürümü
+                indiriyoruz.
+           </p>
+          <img src="images/Ekran Görüntüsü (16).png">
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>Buradan indirdikten sonra aşşağıdaki yükleme ekranından bir şey değiştirmeden
+           ileri diyip şartları kabul ediyoruz</p>
+           <br>
+           <br>
+          <img src="images/nodejs ekran goruntu.png">
+          <br>
+          <br>
+          <br>
+          <p>Node.js kurduktan sonra üstteki adıma gidip npm -v ile kurulup kurulmadıgına bakabilirsiniz
+          </p>
+          <br>
+          <br>
+          <p>NPM paketinin kurulu oldugunu görükten sonra cmd ekranına geliyoruz ve şunu yazıyoruz
+         <b> npm instal -g create-react-app</b>
+          <br>
+          <br>
+          Burada yapılan aslında facebooka ait github sayfasından paketleri indirmek 
+          </p>
+          <img src="images/reactgithubsayfa.png">
+          <br>
+          <br>
+          <br>
+          <p><b>cmd ekranında paket yuklemesı internet hızınıza bağlı olarak birkaç dakikanızı alabılır</b></p>
+          <br>
+          <br>
+          <img src="images/reactcmdyukle.png">
+          <br>
+          <br>
+          <p>Yüklendikten sonra masaüstüne gelip yeni boş bir klasör olşturun ve onu Reactı yazacağınız uygulamada açısından
+               <br>
+               Ben Vscode kullanıyorum ve <b>reactdeneme</b> adında boş bir klasör açıp vscodde açtım onu
+                      
+               <br>
+               <br>
+               <p>Buradan sonra vscodden TERMİNAL kısmına gelip yanda termınal kısmından COMMAND PROMPT kısmını seçip
+                    şunu yazıyoruz <b>create-react-app reactdeneme</b> reactdeneme kısmı benım olusturdum isim siz o kısımı kendiniz koyabilrisiniz
+                    önemli olan create-react-app kısmı
+               </p>
+               Boş dosyayı açmamı, terminal kısmını ve yazdğım yeri kırmızı okla gösterdim.
+               <br>
+               create-react-app reacatdeme yazdıktan sonra birkaç dakika sürecektir internet hızınıza bağlı olarak.
+
+          </p>  
+
+          <img src="images/vscode react olusturma.png">
+          <br>
+          <br>
+          <p>
+           <b>Yükleme işleminden sonra boş olan dosyanızda birçok farklı dosya oldğunu göreceksiniz alt kısımdada react
+           kullanırken gereken komutları görüceksiniz.</b>
+          </p>
+          <img src="images/reactkurulumsonrası.png">
+          <br>
+          <br>
+          <p>Kırmızı okla işaretlediğim kodlar ile react projesi çalıştırılır. cd projeismi arkasından npm start ile projenin çalışacaktır</p>
+          <br>
+          <br>
+          <p>Elimden geldiğince sizlere Reactı anlatmaya ve kurmaya çalıştım.
+               ilk kurulumda biraz zorluk çekebilirsizin ama zamanla öğrencekszinizdir. 
+               Yazılımda da öğrenmek için bol bol kod yazmalısınız şimdiden React ile yapacağınız projelerde başarılar
+               <br>
+               <b>İyi Kodlamalar :)</b> 
+          </p>
+          <marquee behavior="10" direction="right"><img src="images/happycoding.png"></marquee>
+
+     </div>
+ </div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
