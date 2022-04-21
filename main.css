@@ -11,10 +11,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background: url(background.png);
+    background-image: url(background.png);
+    background-color: #464646;
     background-size: cover;
-    background-color:#464646;
-    object-fit: contain;
 }
 
 .fa {   
