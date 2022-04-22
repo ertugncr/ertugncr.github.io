@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-image: url(background.png);
     background-color: #464646;
     background-size: cover;
 }
@@ -40,7 +39,17 @@
     height: 240px;
     object-fit:scale-down;
     border-radius: 80px;
+    
 }
+.buton{
+    background-color:  #ff7675;
+    color:#2d3436;
+    padding:5px;
+    border:2px #d63031 solid;
+    font-size:0.9em;
+    border-radius: 2px;
+}
+
 .blink {
  
     animation: blinker 0.9s linear infinite;
